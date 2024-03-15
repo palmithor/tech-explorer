@@ -1,0 +1,21 @@
+{
+  "name": "@palmithor/tech-explorer",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "format": "bunx @biomejs/biome format  --write .",
+    "lint": "bunx @biomejs/biome lint ."
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@biomejs/biome": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
