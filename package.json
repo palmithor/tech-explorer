@@ -1,14 +1,11 @@
 {
   "name": "@palmithor/tech-explorer",
-  "module": "index.ts",
   "type": "module",
   "scripts": {
     "format": "bunx @biomejs/biome format  --write .",
     "lint": "bunx @biomejs/biome lint ."
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "dependencies": {
     "@biomejs/biome": "^1.6.1"
   },

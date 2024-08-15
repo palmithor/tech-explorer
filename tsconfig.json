@@ -18,7 +18,7 @@
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
-    
+
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
@@ -26,6 +26,6 @@
 
     // palmithor
     "types": ["bun-types"],
-    "esModuleInterop": true,
+    "esModuleInterop": true
   }
 }
