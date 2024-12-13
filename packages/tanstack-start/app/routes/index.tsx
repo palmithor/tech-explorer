@@ -30,7 +30,7 @@ function Home() {
     <button
       type="button"
       onClick={() => {
-        updateCount(1).then(() => {
+        updateCount(2).then(() => {
           router.invalidate();
         });
       }}

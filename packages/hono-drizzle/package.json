@@ -1,0 +1,19 @@
+{
+  "name": "hono-drizzle",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "generate-db-changesets": "bunx drizzle-kit generate --config ./drizzle.config.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.14",
+    "@hono/zod-validator": "^0.4.1",
+    "drizzle-orm": "^0.37.0",
+    "drizzle-seed": "^0.1.2",
+    "hono": "^4.6.12",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.29.0"
+  }
+}

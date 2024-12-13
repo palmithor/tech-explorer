@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import viteLogo from "/vite.svg";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
@@ -7,9 +7,17 @@ import ky from "ky";
 
 function App() {
   const [count, setCount] = useState(0);
-  const { accessToken } = useAuthInfo();
+  const { accessToken, tokens } = useAuthInfo();
   const logOut = useLogoutFunction();
   const { getLoginPageUrl } = useHostedPageUrls();
+
+  useEffect(() => {
+    tokens
+      .getAccessTokenForOrg("5f7cf373-3b82-478f-843b-e4e73597a66e")
+      .then(console.log)
+      .catch(console.log);
+  }, [tokens]);
+
   return (
     <>
       <div>
